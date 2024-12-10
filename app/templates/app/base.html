@@ -6,11 +6,11 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Dairy Products | {% block title %}{% endblock title %}</title>
+    <title>Gippoo {% block title %}{% endblock title %}</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="{% static 'app/css/owl.carousel.min.css' %}" />
-    
+    <link rel="shortcut icon" href="{% static 'app/images/product/logo.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'app/css/all.min.css' %}" />
     <link rel="stylesheet" href="{% static 'app/css/style.css' %}" />
     <link
@@ -26,11 +26,11 @@
       data-bs-theme="dark"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="/"
           ><img
-            src='{% static "app/images/product/neel.png" %}'
+            src='{% static "app/images/product/logo.png" %}'
             width="70"
-            height="50"
+            height="70"
         /></a>
         <button
           class="navbar-toggler"
@@ -60,14 +60,14 @@
                 Products
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'category' 'ML' %}">Milk</a></li>
-                <li><a class="dropdown-item" href="{% url 'category' 'CR' %}">Curd</a></li>
-                <li><a class="dropdown-item" href="{% url 'category' 'MS' %}">Milkshake</a></li>
-                <li><a class="dropdown-item" href="{% url 'category' 'LS' %}">Lassi</a></li>
-                <li><a class="dropdown-item" href="{% url 'category' 'GH' %}">Ghee</a></li>
-                <li><a class="dropdown-item" href="{% url 'category' 'PN' %}">Paneer</a></li>
-                <li><a class="dropdown-item" href="{% url 'category' 'CZ' %}">Cheese</a></li>
-                <li><a class="dropdown-item" href="{% url 'category' 'IC' %}">Ice-cream</a></li>
+                <li><a class="dropdown-item" href="{% url 'category' 'CR' %}">Smartphone</a></li>
+                <li><a class="dropdown-item" href="{% url 'category' 'ML' %}">Laptop</a></li>
+                <li><a class="dropdown-item" href="{% url 'category' 'LS' %}">Tablet</a></li>
+                <li><a class="dropdown-item" href="{% url 'category' 'MS' %}">Gadget</a></li>
+                <li><a class="dropdown-item" href="{% url 'category' 'PN' %}">Accesories</a></li>
+                <li><a class="dropdown-item" href="{% url 'category' 'GH' %}">Console</a></li>
+                {% comment %} <li><a class="dropdown-item" href="{% url 'category' 'CZ' %}">Cheese</a></li>
+                <li><a class="dropdown-item" href="{% url 'category' 'IC' %}">Ice-cream</a></li> {% endcomment %}
               </ul>
             </li>
             <li class="nav-item">
@@ -107,7 +107,7 @@
               <li><a class="dropdown-item" href="{% url 'passwordchange' %}">Change Passwords</a></li>
               <li><form method="post" action="{% url 'logout' %}">
                 {% csrf_token %}
-                <button type="submit" class="btn btn-dark text-start mx-1 w-100">Logout</button>
+                <button type="submit" class="btn btn-dark text-start ">Logout</button>
               </form></li>
             </ul>
           </li>

@@ -4,14 +4,13 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 CATEGORY_CHOICES =(
-  ('CR','Curd'),
-  ('ML','Milk'),
-  ('LS','Lassi'),
-  ('MS','Milkshake'),
-  ('PN','Paneer'),
-  ('GH','GHEE'),
-  ('CZ','CHEESE'),
-  ('IC','Ice-Creams'),
+  ('CR','Smartphone'),
+  ('ML','Laptop'),
+  ('LS','Tablet'),
+  ('MS','Gadget'),
+  ('PN','Accessories'),
+  ('GH','Console'),
+  
 )
 
 class Product(models.Model):
